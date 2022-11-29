@@ -1,0 +1,665 @@
+.top-banner {
+  background-image: url(/Netflix_Clone/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
+.hero-card {
+  background: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, 0.7)),
+    radial-gradient(50% 100%, transparent 0, rgba(0, 0, 0, 0.7) 100%);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.main-container {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+.netflix-logo {
+  float: left;
+  width: 100%;
+  padding: 35px 30px 20px;
+}
+.netflix-logo > div:first-child {
+  float: left;
+}
+.netflix-logo > div:last-child {
+  float: right;
+}
+.netflix-logo > div:first-child > img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: -15px;
+}
+.netflix-logo > div:last-child > span {
+  color: white;
+  background-color: #e50914;
+  padding: 7px 17px;
+  border-radius: 3px;
+  font-size: 17px;
+}
+.banner-body {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+}
+.banner-body > p:first-child {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-block-end: 0px;
+}
+.banner-body > p:nth-child(2) {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+.banner-body > p:nth-child(3) {
+  font-size: 1.625rem;
+  margin-block-end: 0px;
+  margin-block-start: 0.5em;
+}
+.banner-body > p:nth-child(4) {
+  font-size: 1.2rem;
+  margin-block-start: 2em;
+}
+.input-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.input-content > input {
+  padding: 15px 14px;
+  min-width: 450px;
+  outline: 0;
+  font-size: 16px;
+}
+.input-content > span {
+  background-color: #e50914;
+  padding: 13px 14px;
+  min-width: fit-content;
+  font-size: 20px;
+}
+.banner {
+  background-color: #000;
+  height: fit-content;
+  color: white;
+  width: 100%;
+  float: left;
+}
+.banner > div:first-child {
+  border-bottom: 8px solid #222;
+  padding-top: 30px;
+}
+.banner > div:nth-child(2) {
+  padding: 30px;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.banner > div:nth-child(2) > div:nth-child(2) {
+  float: left;
+  width: 40%;
+  position: relative;
+}
+.banner > div:nth-child(2) > div:first-child {
+  padding: 5% 10% 4%;
+  width: 60%;
+  float: left;
+}
+.banner > div:nth-child(2) > div:first-child > p:first-child {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-block-end: 0;
+}
+.banner > div:nth-child(2) > div:first-child > p:nth-child(2) {
+  font-size: 1.625rem;
+}
+.banner > div:nth-child(3),
+.banner > div:nth-child(7) {
+  border-bottom: 8px solid #222;
+  width: 100%;
+  float: left;
+  padding-top: 30px;
+}
+.banner > div:nth-child(2) > div:nth-child(2) img {
+  width: 450px;
+  height: auto;
+  position: relative;
+  z-index: 100;
+}
+
+.video-app {
+  position: absolute;
+  top: 70px;
+  max-width: 320px;
+  left: 60px;
+}
+.video-app > video {
+  max-width: 330px;
+}
+.next-banner {
+  width: 100%;
+  float: left;
+  position: relative;
+  border-bottom: 8px solid #222;
+}
+.next-banner > div:first-child {
+  width: 40%;
+  float: left;
+  padding-left: 7%;
+  position: relative;
+}
+.next-banner > div:first-child > img {
+  width: 500px;
+  height: auto;
+}
+.next-banner > div:nth-child(2) {
+  width: 60%;
+  float: left;
+  padding: 5% 10% 4% 6%;
+}
+.next-banner > div:nth-child(2) > p:first-child {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-block-end: 0;
+}
+.next-banner > div:nth-child(2) > p:nth-child(2) {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-block-start: 0;
+  margin-block-end: 0.5em;
+}
+.next-banner > div:nth-child(2) > p:nth-child(3) {
+  font-size: 1.625rem;
+  margin-block-start: 0;
+}
+.download {
+  width: 40%;
+  position: absolute;
+  padding-left: 250px;
+  top: 350px;
+}
+.download-btn {
+  align-items: center;
+  background: #000;
+  border: 2px solid hsla(0, 0%, 100%, 0.25);
+  border-radius: 0.75em;
+  bottom: 8%;
+  box-shadow: 0 0 2em 0 #000;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0.25em 0.65em;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 300px;
+}
+.download-btn > div:nth-child(3) {
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    50% no-repeat;
+  background-size: 100%;
+  content: "";
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  width: 3em;
+}
+.download-btn > div:nth-child(1) > img {
+  height: 4rem;
+}
+.download-btn > div:nth-child(2) > p:first-child {
+  color: white;
+  margin-block-end: 0px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+.download-btn > div:nth-child(2) > p:last-child {
+  color: #0071eb;
+  margin-block-start: 0.2em;
+}
+.sub-banner {
+  padding: 2% 10%;
+  width: 60%;
+  float: left;
+}
+.sub-banner > p:first-child {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-block-end: 0;
+}
+.sub-banner > p:last-child {
+  font-size: 1.625rem;
+}
+.kids-profile {
+  width: 100%;
+  float: left;
+  border-bottom: 8px solid #222;
+}
+.kids-profile > div:first-child {
+  width: 40%;
+  float: left;
+  padding: 5% 6% 4%;
+}
+.kids-profile > div:first-child > img {
+  width: 130%;
+}
+.kids-profile > div:last-child {
+  width: 60%;
+  float: left;
+  padding: 10% 10% 4% 6%;
+}
+
+.kids-profile > div:last-child > p:first-child {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-block-end: 0;
+}
+.kids-profile > div:last-child > p:last-child {
+  font-size: 1.625rem;
+}
+.faq {
+  width: 100%;
+  float: left;
+  background-color: #000;
+}
+.faq h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3.5rem;
+}
+.faq-details {
+  padding: 10px 20%;
+  width: 100%;
+}
+
+details {
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.625rem;
+  margin-bottom: 10px;
+}
+
+summary {
+  padding: 0.5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  content: "\002B";
+  font-size: 2rem;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #000;
+  margin-bottom: 0.5em;
+}
+
+details[open] summary:after {
+  content: "\00D7";
+}
+
+details[open] div {
+  padding: 0.5em 1em;
+}
+.account-details > p:first-child {
+  font-size: 1.2rem;
+  margin-block-start: 3em;
+  color: white;
+  text-align: center;
+}
+.faq > div:nth-child(4) {
+  border-bottom: 8px solid #222;
+  width: 100%;
+  float: left;
+  padding-top: 50px;
+}
+.footer {
+  background-color: #000;
+  color: #737373;
+  width: 100%;
+  float: left;
+  padding: 40px 20%;
+  font-size: 14px;
+}
+.footer > div > div ul li {
+  list-style-type: none;
+  padding: 7px 0;
+}
+
+.footer > div > div ul li a {
+  color: #737373;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer > div > div ul li a:hover {
+  text-decoration: underline;
+}
+.footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: -40px;
+}
+.footer > p:first-child {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1300px) {
+  .next-banner > div:nth-child(2) {
+    padding: 5% 5% 4% 4%;
+  }
+  .next-banner > div:nth-child(2) > p:first-child,
+  .banner > div:nth-child(2) > div:first-child > p:first-child,
+  .sub-banner > p:first-child,
+  .kids-profile > div:last-child > p:first-child {
+    font-size: 2.8rem;
+  }
+  .next-banner > div:first-child {
+    padding-left: 0;
+  }
+  .banner > div:nth-child(2) > div:first-child {
+    width: 50%;
+    padding: 5% 3%;
+  }
+  .next-banner > div:first-child > img {
+    width: 400px;
+  }
+  .download {
+    top: 280px;
+    padding-left: 200px;
+  }
+  .download-btn > div:nth-child(1) > img {
+    height: 3.5rem;
+  }
+  .kids-profile > div:last-child {
+    padding: 9% 6% 4% 6%;
+  }
+
+  .kids-profile > div:first-child > img {
+    width: 150%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .banner > div:nth-child(2) > div:first-child {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .banner > div:nth-child(2) > div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .next-banner > div:nth-child(2) > p:first-child,
+  .banner > div:nth-child(2) > div:first-child > p:first-child,
+  .sub-banner > p:first-child,
+  .kids-profile > div:last-child > p:first-child {
+    font-size: 2.3rem;
+  }
+  .video-app {
+    left: unset;
+  }
+  .next-banner > div:first-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .next-banner > div:nth-child(2) {
+    width: 100%;
+  }
+  .download {
+    padding-left: 19%;
+  }
+  .next-banner {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+  .next-banner > div:nth-child(2) {
+    text-align: center;
+    padding: 20px 0 0;
+  }
+  .sub-banner {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    padding: 20px;
+  }
+  .kids-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .kids-profile > div:first-child,
+  .kids-profile > div:nth-child(2) {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .kids-profile > div:first-child > img {
+    width: 80%;
+    padding: 0;
+  }
+  .banner-body > p:first-child,
+  .banner-body > p:nth-child(2) {
+    font-size: 2.8rem;
+  }
+  .banner-body {
+    padding: 15px;
+  }
+  .banner-body > p:nth-child(4) {
+    text-align: center;
+  }
+  .input-content > input {
+    min-width: unset;
+  }
+  .faq h1 {
+    font-size: 2.5rem;
+  }
+  .faq-details {
+    padding: 10px 10%;
+  }
+  .footer {
+    padding: 40px 7%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer > div {
+    flex-wrap: wrap;
+  }
+
+}
+
+@media only screen and (max-width: 560px) {
+  .netflix-logo > div:first-child > img {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+  }
+  .netflix-logo {
+    padding: 35px 15px 20px;
+  }
+  .banner-body > p:first-child,
+  .banner-body > p:nth-child(2) {
+    font-size: 1.75rem;
+  }
+  .top-banner {
+    height: 500px;
+  }
+  .banner-body {
+    height: 400px;
+  }
+  .banner-body > p:nth-child(3) {
+    font-size: 1.12rem;
+  }
+  .banner-body > p:nth-child(4) {
+    font-size: 18px;
+    margin-block-start: 1em;
+  }
+  .input-content {
+    display: block;
+    text-align: center;
+  }
+  .input-content > input {
+    width: 90%;
+  }
+  .input-content > span {
+    display: block;
+    width: 30%;
+    margin-left: 30%;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .next-banner > div:nth-child(2) > p:first-child,
+  .banner > div:nth-child(2) > div:first-child > p:first-child,
+  .sub-banner > p:first-child,
+  .kids-profile > div:last-child > p:first-child {
+    font-size: 1.625rem;
+  }
+  .banner > div:nth-child(2) > div:first-child > p:nth-child(2),
+  .next-banner > div:nth-child(2) > p:nth-child(3),
+  .sub-banner > p:last-child,
+  .kids-profile > div:last-child > p:last-child {
+    font-size: 1.125rem;
+  }
+  .banner > div:nth-child(2) > div:nth-child(2) img {
+    width: 95%;
+  }
+  .video-app > video {
+    max-width: 85%;
+  }
+  .banner > div:nth-child(2) {
+    padding: 30px 15px;
+  }
+  .video-app {
+    top: unset;
+    max-width: 95%;
+    left: 70px;
+  }
+  .next-banner > div:first-child > img {
+    width: 80%;
+  }
+  .next-banner > div:first-child {
+    padding-left: 0;
+  }
+  .download-btn > div:nth-child(1) > img {
+    height: 3rem;
+  }
+  .download-btn > div:nth-child(2) > p:first-child {
+    margin-block-start: 0.2em;
+  }
+  .download-btn > div:nth-child(2) > p:last-child {
+    margin-block-end: 0.2em;
+  }
+  .download {
+    top: 230px;
+  }
+  .next-banner > div:nth-child(2) {
+    padding: 20px 15px;
+  }
+  .kids-profile > div:first-child > img {
+    width: 100%;
+  }
+  .faq h1 {
+    font-size: 1.625rem;
+  }
+  .faq {
+    padding: 15px;
+  }
+  .faq-details {
+    padding: 20px 0;
+  }
+  details {
+    font-size: 1.125rem;
+  }
+  .footer > div {
+    flex-wrap: wrap;
+  }
+  .footer > div > div {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 400px)  {
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer > div {
+text-align: center;
+}
+.footer > div > div {
+  width: 100%;
+}
+.video-app > video {
+  max-width: 90%;
+}
+.video-app {
+  left: 45px;
+  max-width: 80%;
+}
+.next-banner {
+  padding-bottom: 100px;
+}
+.download-btn > div:nth-child(2) > p:last-child {
+  font-size: 14px;
+}
+.download-btn > div:nth-child(1) > img {
+  height: 2.5rem;
+}
+.next-banner > div:first-child > img  {
+  width: 90%;
+}
+.download-btn {
+  width: 260px;
+}
+
+}
